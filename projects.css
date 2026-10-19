@@ -6,9 +6,29 @@
 }
 
 .grid-container div {
+    position: relative; 
     background-color: #f1f1f1;
     border: 20px solid #0B1220;
     padding: 50px;
     font-size: 30px;
     text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.grid-container div:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.grid-container div::after {
+    content: ''; 
+    position: absolute;
+    inset: 0;
+    background: rgba(11, 18, 32, 0.5);
+    opacity: 0;
+    transition: opacity 0.3s;
+}
+
+.grid-container div:hover::after {
+    opacity: 1;
 }
