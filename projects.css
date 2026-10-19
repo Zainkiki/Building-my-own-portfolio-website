@@ -1,5 +1,6 @@
 .grid-container {
     display: grid;
+    min-height: 100vh;
     grid-template-columns: auto auto auto;
     background-color: #0B1220;
     padding: 10px;
@@ -10,7 +11,7 @@
     background-color: #f1f1f1;
     border: 20px solid #0B1220;
     padding: 50px;
-    font-size: 30px;
+    font-size: 50px;
     text-align: center;
     transition: transform 0.3s, box-shadow 0.3s;
 }
@@ -31,4 +32,51 @@
 
 .grid-container div:hover::after {
     opacity: 1;
+}
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.6);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+}
+
+.modal:target {
+    opacity: 1;
+    pointer-events: auto;
+}
+.modal-content {
+    background-color: white;
+    padding: 2rem;
+    border-radius: 6px;
+    width: 90%;
+    max-width: 500px;
+    max-height: 90vh;
+    overflow-y: auto;
+    box-shadow: 0 5px 30px rgba(0, 0, 0, 0.2);
+}
+
+.modal-backdrop {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0; 
+    bottom: 0;
+    cursor: default;
+    z-index: -1;
+}
+
+.grid-item a {
+    position: relative;
+    z-index: 1;
 }
