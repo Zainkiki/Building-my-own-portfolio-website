@@ -1,0 +1,358 @@
+
+<!DOCTYPE html>
+<html lang="da">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Min Portfolio - Projekter</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="projects.css">
+</head>
+
+<body>
+    <nav class="navContainer">
+        <ul class="navbar">
+            <li class="navbar-name">Zain Kiki</li>
+            <li><a href="forside.html">Forside</a></li>
+            <li><a href="projekter.html" class="active">Projekter</a></li>
+            <li><a href="cv.html">CV</a></li>
+            <li class="GitHub">
+                <a href="https://github.com/Zainkiki"
+                   target="_blank"
+                   rel="noopener noreferrer">GitHub</a>
+            </li>
+        </ul>
+    </nav>
+
+    <header class="projects-header">
+        <p class="projects-subtitle">MIT ARBEJDE</p>
+
+        <h1>Mine Projekter</h1>
+
+        <p class="projects-description">
+            Her kan du udforske mine projekter og se,
+            hvad jeg har arbejdet med inden for programmering.
+            Hvert projekt repræsenterer noget, jeg har lært
+            og udviklet undervejs.
+        </p>
+    </header>
+
+    <main>
+        <div class="grid-container">
+
+            <div class="grid-item">
+                <a href="#project1" class="modal-trigger">
+                    <img src="Images/DatabaseTablesAndViews.png"
+                         alt="PC-webstedets databasetabeller og visninger">
+
+                    <h3>PC-websted</h3>
+
+                    <p>Databasedesign, API-udvikling og integration med hjemmesiden.</p>
+
+                    <span>Se projekt</span>
+                </a>
+            </div>
+
+            <div class="grid-item">
+                <a href="#project2" class="modal-trigger">
+                    <img src="Images/Digipet.png"
+                         alt="Digipet – konsolspil udviklet i C#">
+
+                    <h3>Digipet</h3>
+
+                    <p>Et konsolspil i C# med kampe og udvikling af kæledyret.</p>
+
+                    <span>Se projekt</span>
+                </a>
+            </div>
+
+            <div class="grid-item">
+                <a href="#project3" class="modal-trigger">
+                    <img src="Images/ProtfilioIntro.png"
+                         alt="Portfolio – Websted udviklet i html og css">
+
+                    <h3>Portfolio</h3>
+
+                    <p>Mit Portfolio</p>
+
+                    <span>Se projekt</span>
+                </a>
+            </div>
+
+            <div class="grid-item">
+                <a href="#project4" class="modal-trigger">Projekt 4</a>
+            </div>
+
+            <div class="grid-item">
+                <a href="#project5" class="modal-trigger">Projekt 5</a>
+            </div>
+
+            <div class="grid-item">
+                <a href="#project6" class="modal-trigger">Projekt 6</a>
+            </div>
+        </div>
+
+        <!-- Projekt 1: PC-websted -->
+
+        <div id="project1" class="modal">
+            <a href="#" class="modal-backdrop"></a>
+
+            <div class="modal-content">
+
+                <h2>1. Databasedesign og -udvikling</h2>
+
+                <p>
+                    Jeg designede og oprettede en Microsoft SQL Server-database
+                    til at opbevare og administrere de data, der bruges på mit
+                    PC-websted. Databasen fungerer som grundlaget for projektet.
+                </p>
+
+                <h3>Tabeller og visninger</h3>
+
+                <img src="Images/DatabaseTablesAndViews.png"
+                     alt="Databasetabeller og visninger i Microsoft SQL Server">
+
+                <p>
+                    Jeg oprettede tabeller og visninger for at organisere
+                    og hente data. Samtidig arbejdede jeg på at reducere
+                    unødvendig dataduplikering og sikre ensartede data.
+                </p>
+
+                <h3>Databaserelationer</h3>
+
+                <img src="Images/DatabaseDiagram.png"
+                     alt="Databasediagram, der viser relationerne mellem tabeller">
+
+                <p>
+                    Jeg brugte værktøjet Database Diagram i SQL Server
+                    Management Studio til at visualisere relationerne
+                    mellem tabellerne og få et overblik over databasens struktur.
+                </p>
+
+                <h3>Brugere og tilladelser</h3>
+
+                <p>
+                    Jeg konfigurerede databasebrugere og tilladelser for
+                    at kontrollere adgangen til databasen. API'et håndterer
+                    kommunikationen med databasen, så databaseoplysninger
+                    ikke eksponeres i hjemmesidens frontend.
+                </p>
+
+                <h3>Anvendte teknologier</h3>
+
+                <p>
+                    Microsoft SQL Server · SQL Server Management Studio · SQL
+                </p>
+
+                <h2>2. API-udvikling</h2>
+
+                <p>
+                    Jeg udviklede et ASP.NET Core-API, der forbinder
+                    hjemmesiden med databasen. API'et henter produktdata
+                    og gør det muligt at gemme nye produkter.
+                </p>
+
+                <img src="Images/APIController.png"
+                     alt="Kode fra ASP.NET Core ProductsController">
+
+                <p>
+                    API'et bruger Entity Framework Core til at tilgå
+                    databasen og indeholder endpoints til at hente enkelte
+                    produkter, vise en liste over produkter og oprette nye produkter.
+                </p>
+
+                <h2>3. Integration med hjemmesiden</h2>
+
+                <h3>Produktside</h3>
+
+                <img src="Images/ProductsPage .png"
+                     alt="PC-webstedets produktside med søgning og filtre">
+
+                <p>
+                    Jeg forbandt hjemmesiden med API'et, så produkterne
+                    hentes fra databasen. Jeg implementerede også
+                    produktsøgning, filtrering efter model, minimums-
+                    og maksimumspris samt en knap til at nulstille filtrene.
+                </p>
+
+                <h3>Tilføjelse af produkter</h3>
+
+                <img src="Images/AddProducts.png"
+                     alt="Formular til at tilføje produkter til PC-webstedet">
+
+                <p>
+                    Jeg tilføjede en formular, der gør det muligt at
+                    indsende nye produkter via hjemmesiden. Produkterne
+                    gemmes derefter i databasen gennem API'et.
+                </p>
+
+                <h3>Anvendte teknologier</h3>
+
+                <p>
+                    HTML · CSS · ASP.NET Core · Entity Framework Core · SQL Server
+                </p>
+
+                <a href="https://github.com/Zainkiki/SQL-Server-Management-Studio-22"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Databasens GitHub-lager
+                </a>
+
+                <br>
+
+                <a href="https://github.com/Zainkiki/PcWebSiteAPI"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    API'ets GitHub-lager
+                </a>
+
+                <br>
+
+                <a href="#" class="modal-close">Luk</a>
+
+            </div>
+        </div>
+
+        <!-- Projekt 2: Digipet -->
+
+        <div id="project2" class="modal">
+            <a href="#" class="modal-backdrop"></a>
+
+            <div class="modal-content">
+
+                <h2>Digipet</h2>
+
+                <img src="Images/Digipet.png"
+                     alt="Digipet vist i konsollen">
+
+                <p>
+                    Digipet er et konsolspil udviklet i C#, hvor spilleren
+                    passer et virtuelt kæledyr, der enten kan være en kat
+                    eller en hund. Spilleren kan forbedre kæledyrets
+                    egenskaber, kæmpe mod monstre og udvikle sig gennem spillet.
+                </p>
+
+                <h3>Funktioner</h3>
+
+                <ul>
+                    <li>
+                        Pasning af kæledyret gennem fodring, træning,
+                        leg og søvn.
+                    </li>
+                    <li>
+                        Kæledyrets egenskaber omfatter helbred, sult,
+                        glæde og angrebsstyrke.
+                    </li>
+                    <li>
+                        Turbaserede kampe mod monstre, hvor spilleren
+                        kan tjene guld og stige i niveau.
+                    </li>
+                    <li>
+                        En våbenbutik med forskellige våben og krav
+                        til spillerens niveau.
+                    </li>
+                    <li>
+                        Gemme og indlæse kæledyrets egenskaber ved hjælp
+                        af tekstfiler.
+                    </li>
+                    <li>
+                        Tilfældige hændelser og ændringer i kæledyrets egenskaber.
+                    </li>
+                </ul>
+
+                <h3>Anvendte teknologier</h3>
+
+                <p>
+                    C# · Objektorienteret programmering · Interfaces · Filhåndtering
+                </p>
+
+                <h3>Hvad jeg har lært</h3>
+
+                <p>
+                    Jeg har arbejdet med klasser, interfaces, properties,
+                    metoder, generering af tilfældige tal, timere og
+                    filhåndtering.
+                </p>
+
+                <a href="https://github.com/Zainkiki/Digipet-Opgave"
+                   target="_blank"
+                   rel="noopener noreferrer">
+                    Digipets GitHub-lager
+                </a>
+
+                <br>
+
+                <a href="#" class="modal-close">Luk</a>
+
+            </div>
+        </div>
+
+        <!-- Projekt 3 -->
+
+        <div id="project3" class="modal">
+            <a href="#" class="modal-backdrop"></a>
+
+            <div class="modal-content">
+                <h2>Projekt 3</h2>
+                <p>Beskrivelse af projektet kommer senere.</p>
+                <a href="#" class="modal-close">Luk</a>
+            </div>
+        </div>
+
+        <!-- Projekt 4 -->
+
+        <div id="project4" class="modal">
+            <a href="#" class="modal-backdrop"></a>
+
+            <div class="modal-content">
+                <h2>Projekt 4</h2>
+                <p>Beskrivelse af projektet kommer senere.</p>
+                <a href="#" class="modal-close">Luk</a>
+            </div>
+        </div>
+
+         Projekt 5 
+
+        <div id="project5" class="modal">
+            <a href="#" class="modal-backdrop"></a>
+
+            <div class="modal-content">
+                <h2>Projekt 5</h2>
+                <p>Beskrivelse af projektet kommer senere.</p>
+                <a href="#" class="modal-close">Luk</a>
+            </div>
+        </div>
+
+         Projekt 6 
+
+        <div id="project6" class="modal">
+            <a href="#" class="modal-backdrop"></a>
+
+            <div class="modal-content">
+                <h2>Projekt 6</h2>
+                <p>Beskrivelse af projektet kommer senere.</p>
+                <a href="#" class="modal-close">Luk</a>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer">
+        <h3>Min Portfolio</h3>
+        <p>Designet og udviklet af mig med HTML og CSS.</p>
+
+        <div class="footer-links">
+            <a href="forside.html">Forside</a>
+            <a href="projekter.html">Projekter</a>
+            <a href="cv.html">CV</a>
+            <a href="https://github.com/Zainkiki"
+               target="_blank"
+               rel="noopener noreferrer">GitHub</a>
+        </div>
+
+        <div class="footer-bottom">
+            <p>© 2026 Min Portfolio.</p>
+        </div>
+    </footer>
+
+</body>
+</html>

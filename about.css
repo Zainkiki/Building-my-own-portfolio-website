@@ -94,3 +94,31 @@
         padding: 25px;
     }
 }
+
+.cv-header {
+    padding: 60px 40px;
+    background-color: #111C2E;
+    text-align: center;
+}
+
+.cv-subtitle {
+    color: #60A5FA;
+    font-size: 14px;
+    font-weight: bold;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+}
+
+.cv-header h1 {
+    color: #F1F5F9;
+    font-size: 42px;
+    margin: 0 0 20px;
+}
+
+.cv-description {
+    color: #CBD5E1;
+    font-size: 18px;
+    line-height: 1.6;
+    max-width: 700px;
+    margin: 0 auto;
+}
